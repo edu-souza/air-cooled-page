@@ -1,0 +1,341 @@
+/*{
+    box-sizing: border-box;
+    outline: 0.1px solid red;
+} */   
+html{
+    font-size: 16px;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none !important;
+}
+ul {
+    list-style: none;
+}
+body {
+    background-color: #e7cf8a ;
+}
+p,a,h2,dl,span{
+    font-family: 'Commissioner', sans-serif;
+}
+h2 {
+    font-family: 'Commissioner', sans-serif;
+}
+.title h1 {
+    font-family: 'Poiret One', cursive;
+}
+/* Info */
+.info-bg a {
+    color: #222;
+}
+.info {
+    max-width: 960px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.info p, .info a {
+    margin: 0px 10px 10px 10px;
+}
+/* Menu */
+.menu-bg {
+    background-color: #222;
+    color: #B90504;
+}
+.menu-nav a {
+    color: #fff;
+}
+.menu-nav a:hover {
+    color: #e7cf8a;
+}
+.menu-nav ul {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.menu-nav a {
+    padding: 10px;
+}
+/* Título */
+.title {
+    display: flex;
+    justify-content: space-around;
+    max-width: 960px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    color: #222;
+}
+.title h1 {
+    text-transform: uppercase;
+    font-size: 6.65em;
+    padding: 0 10px;
+    text-align: center;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.logo {
+    flex: 2;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.main-imgs {
+    display: flex;
+    flex-direction: column;
+    max-height: 520px;
+    overflow-y: scroll;
+    cursor: pointer;
+}
+.desc {
+    flex: 1 1 300px;
+}
+.main-imgs::-webkit-scrollbar {
+    width: 18px;
+} 
+.main-imgs::-webkit-scrollbar-thumb {
+    background: #B90504;
+    border-left: 4px solid #222;
+    border-right: 4px solid #222;
+}
+.main-imgs::-webkit-scrollbar-track {
+    background: #222;
+}
+.titulo {
+    color:#FFF;
+    padding: 10px 10px;
+    background-color: #222222;
+    text-align: center;
+}
+.paragraph {
+    padding: 16px 10px;
+    font-size: 1.125rem;
+}
+.title-bar {
+    background-color: #222;
+    margin-left: 10px;
+}
+.title-bar h2 {
+    text-align: left;
+} 
+/*Slides */
+.buttons {
+    text-align: center;
+}
+.buttons span {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #B90504;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+.buttons span:hover {
+    background-color: #222;
+    transform: scale(1.1);
+}
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 60px;
+    max-width: 642px;
+    margin: 0 auto;
+}
+.slides img {
+    display: none;
+    margin: 20px;
+}
+.slides img.ativo {
+    display: block;
+}
+.carrousel{
+    margin: 60px auto;
+}
+.carrousel h2 {
+    text-align: center;
+    background-color: #222;
+}
+/*---------------------------------------------------*/
+/*Agendamento */
+.agendamento{
+    margin: 60px auto;
+}
+.agendamento h2,.Ordem h2 {
+    text-align: center;
+    background-color: #222;
+}
+.agenda {
+    margin: 20px auto;
+    background-color: #FAF6ED;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px; 
+    font-size: 1.125rem;
+    max-width: 940px;
+}
+.agenda a {
+    margin: 20px 10px;
+}
+.Col{
+    flex: 1 1 453px;
+}
+.Col ul li {
+    border-bottom: solid #222;
+    padding: 10px 10px;
+}
+.Col input {
+    border :0;
+    font-size: 1.125rem;
+    background-color: #FAF6ED;
+    font-family: 'Commissioner', sans-serif;
+}
+label,select {
+    font-family: 'Commissioner', sans-serif;
+}
+.Col input:focus {
+    outline: none;
+}
+.btn{
+    margin-top: 15px;
+    background-color: #B90504;
+    color:#fff;
+    padding: 15px 35px;
+    border-style: none;
+    font-size: 1.125rem;
+    transition: all 0.4s;
+    border: solid 1px #B90504;
+    margin-right: 10px;
+    font-family: 'Commissioner', sans-serif;
+}
+.btn:hover {
+    background: transparent;
+    color: #B90504;
+}
+.agendados {
+    margin: 20px 0;
+    background-color: #FAF6ED;
+    padding: 15px; 
+    font-size: 1.125rem;
+}
+.agendados ul li {
+    border-bottom: solid #222;
+    padding: 10px 10px;   
+}
+.lista-agenda ul li span {
+    padding-left: 10px;
+}
+.Ordem {
+    margin: 60px auto;
+}
+.agendados {
+    max-width: 940px;
+    margin: 30px auto;
+}
+/*#Footer*/
+.footer {
+    background-color: #222;
+    height: 60px;
+}
+.footer p {
+    color: #FAF6ED;
+    display: flex;
+    font-size: 1.25rem;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+}
+/* ---------------------------------------------- */
+/*#FAQ*/
+.faq-lista {
+    text-align: left;
+    font-size: 1.125rem;
+}
+.faq dl dd{
+    display: none;
+}
+.faq-div dt {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.faq-div dt:hover {
+    cursor: pointer;
+    color: #B90504;
+}
+.faq-div dd  {
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+.faq {
+    margin: 60px auto;
+}
+.faq-div {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.faq-lista i {
+    color: #B90504;
+    padding: 15px;
+    font-size: 2.3rem;
+}
+            /*FAQ Animações */
+.js .DTativo {
+    display: block !important;
+    animation: slideDown .5s forwards;
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    } to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}
+/* Animação descrições */
+.js.ativo {
+    display: block !important;
+}
+.js .js-lista-desc li {
+    display: none;
+}
+.js .js-lista-desc li.ativo{
+    display: block !important;
+    animation: show 1s forwards;
+}
+.js .js-scroll {
+    opacity: 0;
+    transition: 1s;
+}
+.js .js-scroll.ativo {
+    opacity: 1;
+    transition: 1s;
+    transform: translate3d(0,-10px,0);
+} 
+@keyframes show {
+from {
+    opacity: 1;
+    transform: translate3d(-10px,0,0);
+} to {
+    opacity: 1;
+    transform: translate(0,0,0);
+}
+}
